@@ -54,6 +54,13 @@ class Uygulama extends StatelessWidget {
                 "assets/images/cemyilmaz.jpeg",
                 width: 200,
               ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  "ogrenmek icin tıkla",
+                ),
+              ),
             ],
           ),
         ),
