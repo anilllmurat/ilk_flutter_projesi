@@ -37,8 +37,25 @@ class Uygulama extends StatelessWidget {
             ),
           ),
         ),
-        body: Image.asset(
-          "assets/images/cemyilmaz.jpeg",
+        body: Center(
+          child: Column(
+            mainAxisAlignment:
+                MainAxisAlignment
+                    .center,
+            crossAxisAlignment:
+                CrossAxisAlignment
+                    .start,
+            children: [
+              Text(
+                "Cem yilmaz turkiyenin en komik insani",
+              ),
+              SizedBox(height: 20),
+              Image.asset(
+                "assets/images/cemyilmaz.jpeg",
+                width: 200,
+              ),
+            ],
+          ),
         ),
       ),
     );
