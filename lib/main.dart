@@ -1,5 +1,6 @@
 //import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'splash_screen.dart';
 
 void main() {
   runApp(Uygulama());
@@ -11,21 +12,7 @@ class Uygulama extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            "ADVENTURER'S BACKPACK",
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 35,
-              fontFamily: "Oswald",
-              fontWeight: FontWeight(
-                500,
-              ),
-            ),
-          ),
-        ),
-      ),
+      home: Splash_screen(),
     );
   }
 }
