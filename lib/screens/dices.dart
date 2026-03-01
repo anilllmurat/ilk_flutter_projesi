@@ -13,6 +13,20 @@ class _DiceScreenState
     extends State<DiceScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        leading: BackButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: Text(
+          "Adventurer's Backpack",
+        ),
+        centerTitle: true,
+        backgroundColor:
+            Colors.amber[300],
+      ),
+    );
   }
 }

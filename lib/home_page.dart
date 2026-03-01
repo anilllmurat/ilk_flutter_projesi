@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'screens/dices.dart';
+import 'screens/notes.dart';
+import 'screens/spells.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -22,7 +25,15 @@ class HomePage extends StatelessWidget {
 
           children: [
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const DiceScreen(),
+                  ),
+                );
+              },
               child: Text(
                 "Dices",
                 style: TextStyle(
@@ -30,8 +41,17 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const NoteScreen(),
+                  ),
+                );
+              },
               child: Text(
                 "Notes",
                 style: TextStyle(
@@ -39,8 +59,17 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const SpellScreen(),
+                  ),
+                );
+              },
               child: Text(
                 "Spells",
                 style: TextStyle(

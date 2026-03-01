@@ -1,18 +1,32 @@
 import 'package:flutter/material.dart';
 
-class Spells_Screen
+class SpellScreen
     extends StatefulWidget {
-  const Spells_Screen({super.key});
+  const SpellScreen({super.key});
 
   @override
-  State<Spells_Screen> createState() =>
-      _Spells_ScreenState();
+  State<SpellScreen> createState() =>
+      _SpellScreenState();
 }
 
-class _Spells_ScreenState
-    extends State<Spells_Screen> {
+class _SpellScreenState
+    extends State<SpellScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        leading: BackButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: Text(
+          "Adventurer's Backpack",
+        ),
+        centerTitle: true,
+        backgroundColor:
+            Colors.amber[300],
+      ),
+    );
   }
 }

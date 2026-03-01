@@ -1,18 +1,32 @@
 import 'package:flutter/material.dart';
 
-class Notes_Screen
+class NoteScreen
     extends StatefulWidget {
-  const Notes_Screen({super.key});
+  const NoteScreen({super.key});
 
   @override
-  State<Notes_Screen> createState() =>
-      _Notes_ScreenState();
+  State<NoteScreen> createState() =>
+      _NoteScreenState();
 }
 
-class _Notes_ScreenState
-    extends State<Notes_Screen> {
+class _NoteScreenState
+    extends State<NoteScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        leading: BackButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: Text(
+          "Adventurer's Backpack",
+        ),
+        centerTitle: true,
+        backgroundColor:
+            Colors.amber[300],
+      ),
+    );
   }
 }
