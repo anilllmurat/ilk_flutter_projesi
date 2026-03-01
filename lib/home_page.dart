@@ -8,86 +8,47 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor:
-              const Color.fromARGB(
-                255,
-                230,
-                202,
-                120,
-              ),
           title: Text(
             "Adventurer's Backpack",
           ),
+          backgroundColor:
+              Colors.amber[300],
           centerTitle: true,
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment:
-                MainAxisAlignment
-                    .spaceEvenly,
-            children: [
-              Row(
-                mainAxisAlignment:
-                    MainAxisAlignment
-                        .spaceEvenly,
-                children: [
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Spells",
-                    ),
-                  ),
-                  SizedBox(width: 30),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Dices",
-                    ),
-                  ),
-                ],
+        body: GridView.count(
+          crossAxisCount: 2,
+          crossAxisSpacing: 2,
+          mainAxisSpacing: 2,
+
+          children: [
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                "Dices",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
-              SizedBox(height: 20),
-              Row(
-                mainAxisAlignment:
-                    MainAxisAlignment
-                        .spaceEvenly,
-                children: [
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Notes",
-                    ),
-                  ),
-                  SizedBox(width: 30),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "peasy",
-                    ),
-                  ),
-                ],
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                "Notes",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
-              SizedBox(height: 20),
-              Row(
-                mainAxisAlignment:
-                    MainAxisAlignment
-                        .spaceEvenly,
-                children: [
-                  TextButton(
-                    onPressed: () {},
-                    child: Text("easy"),
-                  ),
-                  SizedBox(width: 30),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "peasy",
-                    ),
-                  ),
-                ],
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                "Spells",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
