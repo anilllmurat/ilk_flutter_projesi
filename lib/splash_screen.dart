@@ -29,20 +29,17 @@ class _Splash_screenState
     );
   }
 
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: const Text(
-            "ADVENTURER'S BACKPACK",
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 35,
-              fontFamily: "Oswald",
-              fontWeight: FontWeight(
-                500,
-              ),
-            ),
+    return Scaffold(
+      body: Center(
+        child: const Text(
+          "ADVENTURER'S BACKPACK",
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 35,
+            fontFamily: "Oswald",
+            fontWeight: FontWeight(500),
           ),
         ),
       ),
